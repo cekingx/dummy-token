@@ -1,7 +1,7 @@
 import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
 
-const NAME = "StarPOINT"
-const SYMBOL = "STARXP"
+const NAME = "Test USD Tether"
+const SYMBOL = "tUSDT"
 
 const DummyERC20PermitModule = buildModule("DummyERC20PermitModule", (m) => {
   const name = m.getParameter("name", NAME);

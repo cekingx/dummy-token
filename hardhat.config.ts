@@ -9,11 +9,16 @@ const config: HardhatUserConfig = {
     sepolia: {
       url: process.env.RPC_SEPOLIA,
       accounts: [process.env.PRIVATE_KEY as string],
+    },
+    bscTestnet: {
+      url: process.env.RPC_BSC_TESTNET,
+      accounts: [process.env.PRIVATE_KEY as string],
     }
   },
   etherscan: {
     apiKey: {
-      sepolia: process.env.APIKEY_ETHERSCAN as string
+      sepolia: process.env.APIKEY_ETHERSCAN as string,
+      bscTestnet: process.env.APIKEY_BSCSCAN as string
     }
   }
 };
